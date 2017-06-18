@@ -1,0 +1,15 @@
+<table>
+  <thead>
+    <th>Name</th>
+    <th>Price</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of orderList">
+      <td>{{item.name}}</td>
+      <td>{{item.price}}</td>
+    </tr>
+    <tr *ngIf="!orderList.length">
+      <td colspan="2">Nincsenek megjeleníthető elemek!</td>
+    </tr>
+  </tbody>
+</table>
